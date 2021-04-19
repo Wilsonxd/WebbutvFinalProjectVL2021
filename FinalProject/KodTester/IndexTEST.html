@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Roberts PCGuide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap etc -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- CSS länkar -->
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" type="text/css" href="positive.css"/>
+
+  <script src="ThemeChanger.js"></script>
+</head>
+<body>
+
+<!-- Changes BG Color SKIT KOD
+<script>
+  function changeBG(){
+    document.getElementById
+  }
+</script> -->
+
+<!-- Navmenu -->
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="IndexTEST.html"><img src="../Logo/1-removebg.png" alt="Roberts PCGuide" style="width: 100px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Products</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link" href="#">ÖVRIGT</a>
+        </li>
+    </ul>
+
+    <!-- Themes Changer -->
+    <div class="dropdown" style="margin-right: 10px">
+      <button class="btn btn-secondary dropdown-toggle"
+              type="button" id="dropdownMenu1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+        Themes
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <a class="dropdown-item" href="#" onclick="changeCSS('light.css', 0);">Light Theme</a>
+        <a class="dropdown-item" href="#" onclick="changeCSS('dark.css', 0);">Dark Theme</a>
+      </div>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" >
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" ><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</nav>
+
+<div class="cont1">
+<div class="container" style="min-height: 80vh;">    
+  <div class="row">
+
+    <!-- CARDS -->
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top" src="../KodTester/Images/GPU/ASRock_Radeon_VII_16_GB_Phantom_Gaming_X_Video_Card-removebg-preview.png" style="width: 100px;" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit.
+          </p>
+          <a href="#" class="btn btn-primary">Länk</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top" src="../KodTester/Images/GPU/asus-geforce-rtx-3080-10gb-rog-strix-removebg-preview.png" style="width: 100px;" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit.
+          </p>
+          <a href="#" class="btn btn-primary">Länk</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top" src="../KodTester/Images/GPU/Asus_GeForce_RTX_2080_Ti_11_GB_ROG_Strix_Gaming_OC_Video_Card-removebg-preview.png" style="width: 100px;" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit.
+          </p>
+          <a href="#" class="btn btn-primary">Länk</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="cont2">
+<!-- Footer med länkar -->
+<div class="border-top col-12">
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2019-2021 Roberts PCGuide &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; Telefon: 123-1234567 &middot; E-post: RobertsPCGuide@gmail.com</p><br>
+    <p class="float-right">About: <br> <a href="#">Contact-></a><br><a href="#">Text</a></p>
+  </footer>
+</div>
+</div>
+</body>
+</html>
