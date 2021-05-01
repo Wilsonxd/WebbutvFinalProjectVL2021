@@ -87,6 +87,13 @@
   <ItemGroup>
     <Content Include="CSS\light.css" />
     <Content Include="CSS\dark.css" />
+    <Content Include="Img\1-removebg-preview %281%29.png" />
+    <Content Include="Img\1-removebg.png" />
+    <Content Include="Img\1.jpg" />
+    <Content Include="Img\ex2.jpg" />
+    <Content Include="Img\ex3.jpg" />
+    <Content Include="Img\ex4.jpg" />
+    <Content Include="Img\liten.jpg" />
     <Content Include="ThemeChanger.js" />
     <Content Include="Web.config" />
   </ItemGroup>
