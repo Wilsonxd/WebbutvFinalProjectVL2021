@@ -90,6 +90,15 @@
     <Content Include="Img\1-removebg-preview %281%29.png" />
     <Content Include="Img\1-removebg.png" />
     <Content Include="Img\1.jpg" />
+    <Content Include="Img\Delar\GPU\ASRock_Radeon_VII_16_GB_Phantom_Gaming_X_Video_Card-removebg-preview.png" />
+    <Content Include="Img\Delar\GPU\asus-geforce-rtx-3080-10gb-rog-strix-removebg-preview.png" />
+    <Content Include="Img\Delar\GPU\Asus_GeForce_RTX_2080_Ti_11_GB_ROG_Strix_Gaming_OC_Video_Card-removebg-preview.png" />
+    <Content Include="Img\Delar\GPU\Gigabyte_GeForce_GTX_1660_SUPER_6_GB_OC_Video_Card-removebg-preview.png" />
+    <Content Include="Img\Delar\GPU\Gigabyte_GeForce_RTX_2070_SUPER_8_GB_WINDFORCE_OC_3X_Video_Card-removebg-preview %281%29.png" />
+    <Content Include="Img\Delar\GPU\Gigabyte_Radeon_RX_5700_XT_8_GB_GAMING_OC_Video_Card-removebg-preview.png" />
+    <Content Include="Img\Delar\GPU\NVIDIA_GeForce_RTX_2060_SUPER_8_GB_Video_Card-removebg-preview.png" />
+    <Content Include="Img\Delar\GPU\RTX_3090-removebg-preview.png" />
+    <Content Include="Img\Delar\GPU\XFX_Radeon_RX_580_8_GB_GTS_XXX_ED_Video_Card-removebg-preview.png" />
     <Content Include="Img\ex2.jpg" />
     <Content Include="Img\ex3.jpg" />
     <Content Include="Img\ex4.jpg" />
