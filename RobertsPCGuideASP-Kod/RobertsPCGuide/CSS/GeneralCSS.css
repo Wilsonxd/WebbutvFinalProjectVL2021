@@ -10,6 +10,7 @@
 
 .topnav {
     background-color: #262626;
+    min-height: 10vh;
 }
 
 body {
@@ -29,7 +30,18 @@ footer {
     color: #e5e5e5;
     font-size: 44px;
     margin: auto;
-    width: 80%;
+    width: 100%;
     padding:10px;
-    font-family: Fontin;
+    font-family: 'Roboto Slab';
+    text-align: center;
+}
+.btn-outline-success{
+    background-color: #48b4e2 !important;
+    border-color: #e5e5e5 !important;
+}
+.fas fa-search{
+    color: white !important;
+}
+.navbar-toggler-icon{
+    color: #e5e5e5 !important;
 }
