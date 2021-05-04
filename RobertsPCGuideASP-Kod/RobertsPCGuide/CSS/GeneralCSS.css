@@ -4,22 +4,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #262626;
-    color: #e5e5e5;
 }
 
 .topnav {
-    background-color: #262626;
     min-height: 10vh;
 }
 
-body {
-    background-color: #333333;
-}
-
-footer {
-    background-color: #262626;
-}
 .c-img {
     display: block;
     margin-left: auto;
@@ -27,7 +17,6 @@ footer {
 }
 
 .intro-text{
-    color: #e5e5e5;
     font-size: 44px;
     margin: auto;
     width: 100%;
@@ -35,13 +24,6 @@ footer {
     font-family: 'Roboto Slab';
     text-align: center;
 }
-.btn-outline-success{
-    background-color: #48b4e2 !important;
-    border-color: #e5e5e5 !important;
-}
-.fas fa-search{
-    color: white !important;
-}
-.navbar-toggler-icon{
-    color: #e5e5e5 !important;
+.nav-link:hover{
+    border-bottom: 1px solid #1e4b7b;
 }
