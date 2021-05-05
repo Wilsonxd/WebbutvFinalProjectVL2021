@@ -14,7 +14,7 @@ nav{
 footer {
     background-color: #262626;
 }
-.intro-text{
+.intro-text, .second-text{
     color: #e5e5e5;
 }
 .fas {
