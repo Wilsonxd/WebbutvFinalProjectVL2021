@@ -156,7 +156,9 @@
     <Content Include="index.cshtml" />
     <Content Include="contact.cshtml" />
     <Content Include="about.cshtml" />
-    <Content Include="products.cshtml" />
+    <Content Include="partpicker.cshtml" />
+    <Content Include="prebuilt.cshtml" />
+    <Content Include="gadgets.cshtml" />
     <None Include="packages.config" />
     <Content Include="Shared\_Layout1.cshtml" />
     <None Include="Web.Debug.config">
