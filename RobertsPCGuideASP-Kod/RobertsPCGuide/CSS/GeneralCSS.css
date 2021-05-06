@@ -9,7 +9,9 @@
 .topnav {
     min-height: 10vh;
 }
-
+footer{
+    margin-bottom: 0px !important;
+}
 .c-img {
     display: block;
     margin-left: auto;
