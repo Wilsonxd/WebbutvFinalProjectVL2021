@@ -13,7 +13,16 @@
 
 </head>
 <body>
+
     <div class="cont1">
+        <div class="card info-card" style="width: 230px; ">
+            <div class="card-body ">
+                <p class="p-border-bottom">Great Prices</p>
+                <p class="p-border-bottom">Free Shipping</p>
+                <p class="p-border-bottom">Free Return</p>
+                <p class="p-border-bottom">Trusted by 50+ companies</p>
+            </div>
+        </div>
         <h1 class="intro-text" style="padding-top:20px">
             Welcome to Roberts PCGuide!
         </h1>
@@ -21,38 +30,158 @@
             Here you can find all the needs for your current or future computer. With outstandingly good prices!
         </h2>
 
-        <div class="container" style="min-height: 70vh; padding-top: 50px;">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block w-80 c-img" src="~/Img/Delar/GPU/asus-geforce-rtx-3080-10gb-rog-strix-removebg-preview.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="First slide" />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Asus Geforce RTX 3080 10GB ROG-STRIX</h3>
-                            <p>The new and extreme RTX 3080, perfect for new AAA games!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-80 c-img" src="~/Img/Delar/GPU/RTX_3090-removebg-preview.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="First slide" />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>The Beast: RTX 3090</h3>
-                            <p>The new elite, top-notch gaming graphics card will crush all games.</p>
-                        </div>
-                    </div>
+
+
+        <div class="container" style="padding-top: 50px; animation: drop 1s ease-in-out">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="list-group">
+                        <a href="~/partpicker.cshtml" class="list-group-item list-group-item-action flex-column align-items-start active">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1 second-text">Here you can build your own personaliced PC</h5>
+                            </div>
+                            <p class="mb-1">Visit the PC Partpicker site under the products tab to start building your future PC!</p>
+                            <small>And everything is always in stock and at an amazing price!</small>
+                        </a>
+                        <a href="~/about.cshtml" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Want to learn more about us?</h5>
+                            </div>
+                            <p class="mb-1">Navigate over to the About page to read more about us and follow the links to our social medias!</p>
+                            <small class="text-muted">You wont regret it!</small>
+                        </a>
+                        <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Have some feedback or general questions in mind?</h5>
+                            </div>
+                            <p class="mb-1">On the Contact page you can fill in a form and ask us any question or give any feedback!</p>
+                            <small class="text-muted">And remember, all feedback is good feedback!</small>
+                        </a>
+                    </div><br /><hr class="my-2" /><br />
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
-    </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="jumbotron">
+                            <h1 class="intro-text">Best Selling Products</h1>
+
+                            <hr class="my-2">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-80 c-img" src="~/Img/Delar/GPU/asus-geforce-rtx-3080-10gb-rog-strix-removebg-preview.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Asus Geforce RTX 3080 10GB ROG-STRIX</h3>
+                                            <p>The new and extreme RTX 3080, perfect for new AAA games!</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-80 c-img" src="~/Img/Delar/GPU/RTX_3090-removebg-preview.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>The Beast: RTX 3090</h3>
+                                            <p>The new elite, top-notch gaming graphics card will crush all games</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-80 c-img" src="~/Img/Delar/Case/Lian_Li_PC-O11_Dynamic_ATX_Full_Tower_Case.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Lian Li PC-011</h3>
+                                            <p>Nice transparent chassis with great potential for nice computers</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-80 c-img" src="~/Img/Delar/CPU/Intel_Core_i9-9900K_3.6_GHz_8-Core_Processor.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Intel Core i9</h3>
+                                            <p>Intel's best processor, awesome for games and editing etc.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-80 c-img" src="~/Img/Delar/CPU Cooler/Corsair_H150i_PRO_47.3_CFM_Liquid_CPU_Cooler-removebg-preview.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Corsair H150i PRO</h3>
+                                            <p>An awesome CPU fan powered on water cooling with tripple fans for efficient cooling</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-80 c-img" src="~/Img/Delar/MOBO/Asus_PRIME_Z390-A_ATX_LGA1151_Motherboard-removebg-preview.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Asus PRIME Z390</h3>
+                                            <p>Perfect motherboard from ASUS for Intel socket processors</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><hr class="my-2" /><br />
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="jumbotron">
+                            <h1 class="intro-text">20% Off on these products!</h1>
+                            <h1 class="second-text">Check out the deals, sale is only on for a limited time!</h1>
+                            <hr class="my-2">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-80 c-img" src="~/Img/Sales/RTX_2060-REA.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>20% on the Nvidia RTX 2060 Super</h3>
+                                            <p>Crazy hot deal! Don't miss out!</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-80 c-img" src="~/Img/Sales/Corsair_Vengeance-REA.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>8GB RAM for a crazy good price!</h3>
+                                            <p>The Corsair Vengeance DDR4-3000Mhz 8GB is at a crazy good prize!</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-80 c-img" src="~/Img/Sales/Corsair_iCUE-REA.png" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" />
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>20% on the Corsair ICUE chassi</h3>
+                                            <p>Perfect chassi for any person and any computer!</p>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><hr class="my-2" /><br />
+            </div>
+     </div>
 </body>
 </html>

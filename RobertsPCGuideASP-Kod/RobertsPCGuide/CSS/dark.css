@@ -24,6 +24,9 @@ footer {
 .nav-link {
     color: #38b4e2;
 }
+.jumbotron{
+    background-color: #262626 !important;
+}
 
 
 
@@ -449,7 +452,7 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #e5e5e5;
 }
 
 small,
@@ -5812,7 +5815,6 @@ a.badge-dark:focus, a.badge-dark.focus {
         z-index: 2;
         color: #fff;
         background-color: #007bff;
-        border-color: #007bff;
     }
 
     .list-group-item + .list-group-item {
@@ -8667,6 +8669,7 @@ button.bg-dark:focus {
 .mb-2,
 .my-2 {
     margin-bottom: 0.5rem !important;
+    color: #e5e5e5;
 }
 
 .ml-2,

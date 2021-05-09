@@ -143,6 +143,14 @@
     <Content Include="Img\ex3.jpg" />
     <Content Include="Img\ex4.jpg" />
     <Content Include="Img\liten.jpg" />
+    <Content Include="Img\Sales\Corsair_iCUE-REA.png" />
+    <Content Include="Img\Sales\Corsair_Vengeance-REA.png" />
+    <Content Include="Img\Sales\RTX_2060-REA.png" />
+    <Content Include="Img\Sales\RTX_3090-REA.png" />
+    <Content Include="Img\Social\facebooklogo.png" />
+    <Content Include="Img\Social\Instagramlogo.png" />
+    <Content Include="Img\Social\redditlogo.png" />
+    <Content Include="Img\Social\twitterlogo.png" />
     <Content Include="ThemeChanger.js" />
     <Content Include="Web.config" />
   </ItemGroup>
