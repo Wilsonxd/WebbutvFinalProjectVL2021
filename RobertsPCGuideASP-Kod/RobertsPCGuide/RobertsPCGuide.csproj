@@ -82,6 +82,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\PartpickerDB.mdf" />
+    <Content Include="App_Data\PartpickerDB_log.ldf">
+      <DependentUpon>PartpickerDB.mdf</DependentUpon>
+    </Content>
     <Content Include="CSS\light.css" />
     <Content Include="CSS\dark.css" />
     <Content Include="CSS\GeneralCSS.css" />
@@ -93,7 +97,6 @@
     <Content Include="Img\Delar\Case\Corsair_SPEC-DELTA_RGB_ATX_Mid_Tower_Case.png" />
     <Content Include="Img\Delar\Case\Lian_Li_PC-O11_Dynamic_ATX_Full_Tower_Case.png" />
     <Content Include="Img\Delar\Case\NZXT_H510_ATX_Mid_Tower_Case.png" />
-    <Content Include="Img\Delar\Case\NZXT_H510_Elite_ATX_Mid_Tower_Case.png" />
     <Content Include="Img\Delar\Case\Phanteks_Eclipse_P400A_Digital_ATX_Mid_Tower_Case.png" />
     <Content Include="Img\Delar\CPU Cooler\AMD_Wraith_Max_55.78_CFM_CPU_Cooler-removebg-preview.png" />
     <Content Include="Img\Delar\CPU Cooler\be_quiet__Dark_Rock_Pro_4_50.5_CFM_CPU_Cooler-removebg-preview.png" />
@@ -173,9 +176,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
