@@ -13,10 +13,79 @@
 
 
     <div class="cont1">
-
-        <div class="container" style="min-height: 80vh;">
+        <h2 class="intro-text padding-top">Contact us</h2>
+        <div class="container" style="min-height: 80vh; animation: dropTop 1s ease;">
             <div class="row">
 
+                <section class="col-12">
+
+                    <div class="row">
+                        <p class="second-text">
+                            Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                            a matter of hours to help you.
+                        </p>
+                        <div class="col-md-9 mb-md-0 mb-5">
+                            <form id="contact-form" action="mail.php" method="POST" style="font-family:Fontin">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0 div-white">
+                                            <label for="name">Name:</label>
+                                            <input type="text" id="name" name="name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0 div-white">
+                                            <label for="email">Email:</label>
+                                            <input type="text" id="email" name="email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div><br />
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0 div-white">
+                                            <label for="subject" class="">Subject:</label>
+                                            <input type="text" id="subject" name="subject" class="form-control" maxlength="30">
+                                        </div>
+                                    </div>
+                                </div><br />
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form div-white">
+                                            <label for="message">Message:</label>
+                                            <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea" maxlength="500"></textarea>
+                                        </div>
+                                    </div>
+                                </div><br />
+
+                            </form>
+
+                            <div class="text-center text-md-left">
+                                <p class="btn btn-primary">Submit</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 text-center" style="font-family:Fontin">
+                            <ul class="list-unstyled mb-0">
+                                <li class="div-white">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                    <p>Jönköping, 55594, Sweden</p>
+                                </li>
+
+                                <li class="div-white">
+                                    <i class="fas fa-phone mt-4 fa-2x"></i>
+                                    <p>+123-1234567</p>
+                                </li>
+
+                                <li class="div-white">
+                                    <i class="fas fa-envelope mt-4 fa-2x"></i>
+                                    <p>RobertsPCGuide@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

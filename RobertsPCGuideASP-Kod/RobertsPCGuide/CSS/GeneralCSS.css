@@ -30,6 +30,7 @@ footer {
     text-align: center;
     text-decoration: none;
     text-shadow: 2px 2px 4px black;
+    background: linear-gradient(90deg, rgba(72,180,226,1) 0%, rgba(30,75,123,1) 100%);
 }
 .second-text {
     font-size: 30px;
@@ -37,6 +38,10 @@ footer {
     text-align: center;
     text-decoration: none;
     text-shadow: 2px 2px 4px black;
+    margin:auto;
+}
+.text-align-center{
+    text-align:center;
 }
 
 .nav-link, .card, .rotateHover, .scaleHover, .about-img {
@@ -85,32 +90,9 @@ footer {
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 10px 10px 0px rgba(0,0,0,0);
     box-shadow: 0px 10px 13px -7px #000000, 0px 10px 10px 0px rgba(0,0,0,0);
 }
-.jumbotron{
+.jumbotron {
     margin-bottom: 0px !important;
-}
-
-.info-card {
-    position: absolute !important;
-    min-width: 960px;
-    left: 10px;
-    top: 200px;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 10px 10px 0px rgba(0,0,0,0);
-    box-shadow: 0px 10px 13px -7px #000000, 0px 10px 10px 0px rgba(0,0,0,0);
-    animation: slide 2s ease-in-out;
-}
-.info-card:hover{
-    transform: scale(1) !important;
-    transform: translateY(0px);
-    border: 1px solid #e5e5e5;
-}
-.info-card:hover ~ .p-border-bottom{
-    color: #e5e5e5;
-
-}
-.p-border-bottom {
-    border-bottom: 1px solid #333333;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    background: linear-gradient(90deg, rgba(72,180,226,1) 0%, rgba(30,75,123,1) 100%);
 }
 
 .list-group-item.active{
@@ -122,8 +104,11 @@ footer {
     color: #e5e5e5 !important;
 }
 .list-group-item:hover {
-    background-color: #262626 !important;
+    background: linear-gradient(90deg, rgba(72,180,226,1) 0%, rgba(30,75,123,1) 100%);
     animation: ease 1s;
+}
+.padding-top{
+    padding-top: 20px;
 }
 
 
@@ -186,24 +171,5 @@ footer {
 
     100% {
         opacity: 100%;
-    }
-}
-
-@keyframes fadeout {
-    100% {
-        opacity: 100%;
-    }
-
-    0% {
-        opacity: 0%;
-    }
-}
-
-
-/*Media*/
-
-@media only screen and (width: 1024px) {
-    .info-card {
-        display: none !important;
     }
 }

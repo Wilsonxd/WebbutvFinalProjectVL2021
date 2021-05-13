@@ -37,16 +37,8 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"
-                           href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Products
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="~/partpicker.cshtml">PC Partpicker</a>
-                            <a class="dropdown-item" href="~/prebuilt.cshtml">Prebuilt PC</a>
-                            <a class="dropdown-item" href="~/gadgets.cshtml">Gaming Gadgets</a>
-                        </div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="~/partpicker.cshtml">PC Partpicker</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="~/about.cshtml">About</a>
@@ -57,7 +49,7 @@
                 </ul>
 
                 <!-- Themes Changer -->
-                <div class="dropdown dropShadow" style="margin-right: 10px">
+                <div class="dropdown dropShadow" style="margin-right: 50px">
                     <button class="btn btn-secondary dropdown-toggle"
                             type="button" id="dropdownMenu1" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -69,10 +61,7 @@
                         <a class="dropdown-item" href="#" onclick="changeCSS('/CSS/dark.css', 1);">Dark Theme</a>
                     </div>
                 </div>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 dropShadow" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0 dropShadow" type="submit"><i class="fa fa-search"></i></button>
-                </form>
+                
             </div>
         </nav>
     <main>
@@ -85,7 +74,7 @@
         <div class="col-12">
             <footer class="container">
                 <p class="float-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2019-2021 Roberts PCGuide &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> 
+                <p>&copy; 2019-2021 Roberts PCGuide &middot; <a href="~/about.cshtml">About</a> &middot; <a href="~/contact.cshtml">Contact</a> 
                 &middot; Telefon: 123-1234567 &middot; E-post: RobertsPCGuide@gmail.com</p><br>
             </footer>
         </div>
