@@ -99,16 +99,36 @@ footer {
     color: #e5e5e5 !important;
     background-color: #1e4b7b !important;
 }
-.list-group-item{
+.list-group-item {
     background-color: #333 !important;
     color: #e5e5e5 !important;
+    border: 0px !important;
+    -webkit-transition: ease 1s !important;
+    -moz-transition: ease 1s !important;
+    transition: ease 1s !important;
 }
 .list-group-item:hover {
     background: linear-gradient(90deg, rgba(72,180,226,1) 0%, rgba(30,75,123,1) 100%);
-    animation: ease 1s;
+    transition: ease 1s;
+    -webkit-transition: ease 1s !important;
+    -moz-transition: ease 1s !important;
+    transition: ease 1s !important;
 }
 .padding-top{
     padding-top: 20px;
+}
+.btn-primary {
+    background: linear-gradient(90deg, rgba(72,180,226,1) 0%, rgba(30,75,123,1) 100%) !important;
+    border: 0px !important;
+    -webkit-transition: ease 1s !important;
+    -moz-transition: ease 1s !important;
+    transition: ease 1s !important; 
+}
+.btn-primary:hover {
+    background: linear-gradient(90deg, rgba(223,17,17,1) 0%, rgba(125,51,45,1) 50%) !important;
+    -webkit-transition: ease 1s !important;
+    -moz-transition: ease 1s !important;
+    transition: ease 1s !important;
 }
 
 

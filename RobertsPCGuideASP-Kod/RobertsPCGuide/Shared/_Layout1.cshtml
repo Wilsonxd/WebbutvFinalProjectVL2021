@@ -1,4 +1,27 @@
-﻿<!DOCTYPE html>
+﻿@*@{ 
+    using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconn"].ConnectionString))
+    {
+        con.Open();
+        var queryString = "SELECT * FROM PRODUCTS";
+        SqlCommand cmd = new SqlCommand(queryString, con);
+        using (SqlDataReader reader = cmd.ExecuteReader())
+        {
+            if (reader.HasRows)
+            {
+                // Read advances to the next row.
+                while (reader.Read())
+                {
+                    var valeu1 = reader[0];
+                    var value2 = reader[1];
+                }
+
+            }
+        }
+    }
+}*@
+
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>@Page.Title</title>
