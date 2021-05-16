@@ -1,0 +1,10 @@
+﻿@*@{
+    WebSecurity.InitializeDatabaseConnection("Users", "Users", "UserId", "UserName", true);
+}
+
+@{
+    if (!WebSecurity.UserExists("admin"))
+    {
+        WebSecurity.CreateUserAndAccount("admin", "Passw0rd!");
+    }
+}*@

@@ -31,22 +31,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @RenderSection("head", required: false)
 
-
+    <!--Theme changer länkarna-->
     <link href="~/CSS/GeneralCSS.css" rel="stylesheet" />
     <link href="~/CSS/dark.css" rel="stylesheet" />
+    <!--Javascript till theme changer-->
+    <script src="~/ThemeChanger.js"></script>
 
     <!-- Font Awesome Images link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <script src="~/ThemeChanger.js"></script>
-
-
-
-
+    <!--Bootstrap & Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -59,7 +55,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto ">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="~/partpicker.cshtml">PC Partpicker</a>
                     </li>
@@ -78,16 +74,17 @@
                             aria-haspopup="true" aria-expanded="false">
                         Themes
                     </button>
-
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <a class="dropdown-item" href="#" onclick="changeCSS('/CSS/light.css', 1);">Light Theme</a>
                         <a class="dropdown-item" href="#" onclick="changeCSS('/CSS/dark.css', 1);">Dark Theme</a>
                     </div>
                 </div>
-                
+
             </div>
         </nav>
+
     <main>
+        <!--Rendra varje sida med respektive body-->
         @RenderBody()
     </main>
 

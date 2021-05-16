@@ -2,18 +2,102 @@
     Page.Title = "Roberts PCGuide - Contact";
     Layout = "~/Shared/_Layout1.cshtml";
 }
+
+@{
+    var placeholderName = "Your name";
+    var placeholderEmail = "Your email";
+    var placeholderSubject = "Subject";
+    var placeholderMessage = "Your message";
+
+    var nameVar = Request["name1"];
+    var emailVar = Request["email1"];
+    var subjectVar = Request["subject1"];
+    var messageVar = Request["message1"];
+
+    Validation.Add("name1", Validator.Required(
+        "Please fill in your name"), Validator.StringLength(20, 2,
+        "Needs to be between 2 and 20 letters long"
+        ));
+
+    Validation.Add("email1", Validator.Required(
+        "Please fill in your email"), Validator.StringLength(100, 2,
+        "Needs to be between 2 and 100 letters long"
+        ));
+
+    Validation.Add("subject1", Validator.Required(
+        "Please fill in your subject"), Validator.StringLength(30, 2,
+        "Needs to be between 2 and 30 letters long"
+        ));
+
+    Validation.Add("message1", Validator.Required(
+        "Please fill in your message"), Validator.StringLength(500, 2,
+        "Needs to be between 2 and 500 letters long"
+        ));
+}
+
+@{
+    if (IsPost && nameVar.IsEmpty() && emailVar.IsEmpty() && subjectVar.IsEmpty() && messageVar.IsEmpty())
+    {
+        Validation.AddFormError("Please fill in the form before continuing");
+    }
+}
+
 <html lang="en">
 <head>
 
     <link rel="stylesheet" type="text/css" href="positive.css" />
 
+    <!--JS-->
     <script src="~/ThemeChanger.js"></script>
+
 </head>
 <body>
-
-
     <div class="cont1">
         <h2 class="intro-text padding-top">Contact us</h2>
+
+        @{<br />
+            if (IsPost)
+            {
+                if (nameVar.IsEmpty())
+                {
+                    placeholderName = nameVar;
+
+                    <div class="alert alert-danger" role="alert">
+                        <p>Please fill in your name</p>
+                    </div>
+                }
+                if (emailVar.IsEmpty())
+                {
+                    placeholderEmail = emailVar;
+
+                    <div class="alert alert-danger" role="alert">
+                        <p>Please fill in your email</p>
+                    </div>
+                }
+                if (subjectVar.IsEmpty())
+                {
+                    placeholderSubject = subjectVar;
+
+                    <div class="alert alert-danger" role="alert">
+                        <p>Please fill in your subject</p>
+                    </div>
+                }
+                if (messageVar.IsEmpty())
+                {
+                    placeholderMessage = messageVar;
+
+                    <div class="alert alert-danger" role="alert">
+                        <p>Please fill in your message</p>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-primary" role="alert">
+                        Thank you! Your message has been sent and recived to us!
+                    </div>
+                }
+            }
+        }
         <div class="container" style="min-height: 80vh; animation: dropTop 1s ease;">
             <div class="row">
 
@@ -25,18 +109,22 @@
                             a matter of hours to help you.
                         </p>
                         <div class="col-md-9 mb-md-0 mb-5">
-                            <form id="contact-form" action="mail.php" method="POST" style="font-family:Fontin">
+                            <form id="contact-form" method="POST" action="~/contact.cshtml" style="font-family:Fontin">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="md-form mb-0 div-white">
+                                            <!--FÖRNAMN-->
                                             <label for="name">Name:</label>
-                                            <input type="text" id="name" name="name" class="form-control">
+                                            <input type="text" id="name" name="name1" class="form-control">
+                                            @Html.ValidationMessage("name")
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="md-form mb-0 div-white">
+                                            <!--EMAIL-->
                                             <label for="email">Email:</label>
-                                            <input type="text" id="email" name="email" class="form-control">
+                                            <input type="email" id="email" name="email1" class="form-control">
+                                            @Html.ValidationMessage("email")
                                         </div>
                                     </div>
                                 </div><br />
@@ -44,8 +132,10 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="md-form mb-0 div-white">
+                                            <!--ÄMNE-->
                                             <label for="subject" class="">Subject:</label>
-                                            <input type="text" id="subject" name="subject" class="form-control" maxlength="30">
+                                            <input type="text" id="subject" name="subject1" class="form-control" maxlength="30">
+                                            @Html.ValidationMessage("subject")
                                         </div>
                                     </div>
                                 </div><br />
@@ -53,17 +143,21 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="md-form div-white">
+                                            <!--MEDDELANDE-->
                                             <label for="message">Message:</label>
-                                            <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea" maxlength="500"></textarea>
+                                            <textarea type="text" id="message" name="message1" rows="3" class="form-control md-textarea" maxlength="500"></textarea>
+                                            @Html.ValidationMessage("message")
                                         </div>
                                     </div>
                                 </div><br />
 
+                                <div class="text-center text-md-left">
+                                    <!--SUBMIT-->
+                                    <input type="submit" class="btn btn-primary" value="Submit" />
+                                </div>
                             </form>
 
-                            <div class="text-center text-md-left">
-                                <p class="btn btn-primary">Submit</p>
-                            </div>
+
                         </div>
 
                         <div class="col-md-3 text-center" style="font-family:Fontin">
