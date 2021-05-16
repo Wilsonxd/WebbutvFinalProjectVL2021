@@ -30,9 +30,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @RenderSection("head", required: false)
 
-    <!--Theme changer länkarna-->
+    <!--CSS-->
     <link href="~/CSS/GeneralCSS.css" rel="stylesheet" />
     <link href="~/CSS/dark.css" rel="stylesheet" />
+
     <!--Javascript till theme changer-->
     <script src="~/ThemeChanger.js"></script>
 
@@ -48,11 +49,14 @@
 
     <!-- Navmenu -->
         <nav class="navbar navbar-expand-lg topnav">
+            <!--Bild med länk till index.cshtml-->
             <a class="navbar-brand" href="~/index.cshtml"><img class="scaleHover" src="~/Img/1-removebg.png" alt="Roberts PCGuide" style="width: 100px;"></a>
+            <!--Meny toggler som visas när skärmen är mindre-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
+            <!--Länkar-->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">

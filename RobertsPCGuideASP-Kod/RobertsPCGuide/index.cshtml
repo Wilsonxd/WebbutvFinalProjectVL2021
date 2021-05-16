@@ -1,29 +1,41 @@
 ﻿@{
+    <!-- Titel + länk till layout -->
     Page.Title = "Roberts PCGuides";
     Layout = "~/Shared/_Layout1.cshtml";
 }
 <html lang="en">
 <head>
-    <!-- CSS länkar -->
-
+    <!-- Theme Changer CSS -->
     <link rel="stylesheet" type="text/css" href="positive.css" />
-
-    <!-- JavaScript-->
-    <script src="~/ThemeChanger.js"></script>
-
 </head>
 <body>
-
+    <!--Intro text-->
     <div class="cont1">
         <h1 class="intro-text padding-top">
             Welcome to Roberts PCGuide!
         </h1><br />
+
+        @{
+            if (IsPost)
+            {
+                <!--Meddelande som dyker upp efter att man fyllt i
+                sig till nyhetsbrevet längre ned på sidan.-->
+                <div class="col-6" style="margin: auto; text-align: center; font-family: Fontin">
+                    <div class="alert alert-primary dropShadow" style="background-color:#48B4E2 !important; border-color:#1E4B7B; color: #333333;" role="alert">
+                        Thank you! Your email is now on the newsletter list!
+                    </div><br />
+                </div>
+            }
+        }
+        <!--Second text, text som presenterar sidan.-->
         <h2 class="second-text">
             Here you can find all the needs for your current or future computer.<br /> With outstandingly good prices!
         </h2>
-     
-        <div class="container" style="padding-top: 50px; animation: dropTop 1s ease-in-out">
 
+        <!--Container som håller -->
+        <div class="container" style="padding-top: 50px; animation: dropTop 1s ease">
+
+            <!--Informerande sektion med länkar till respektive sida.-->
             <div class="row">
                 <div class="col-12">
                     <div class="list-group dropShadow">
@@ -52,11 +64,11 @@
                 </div>
             </div>
 
+            <!--Jumbotron med en slideshow som presenterar populära produkter-->
             <div class="row">
                 <div class="col-12">
                     <div class="jumbotron dropShadow">
                         <h1 class="intro-text">Best Selling Products</h1>
-
                         <hr class="my-2">
                         <div id="carouselExampleCaptions1" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -124,6 +136,7 @@
                 </div>
             </div><br /><hr class="my-2" /><br />
 
+            <!--Rabbaterade produkter i en slideshow-->
             <div class="row">
                 <div class="col-12">
                     <div class="jumbotron dropShadow">
@@ -172,17 +185,9 @@
                 </div>
             </div><br /><hr class="my-2" /><br />
 
-            @{
-                if (IsPost)
-                {
-                    <div class="alert alert-primary" role="alert">
-                        Thank you! Your email is now on the newsletter list!
-                    </div>
-                }
-            }
-
-            <div class="jumbotron dropShadow" style="background-color: #262626; background:none">
-                <h1 class="second-text">
+            <!--Nyhetsbrev anmälan-->
+            <div class="jumbotron dropShadow" style="background-color: #262626 !important; background:none">
+                <h1 class="second-text" style="color: #e5e5e5 !important">
                     Sign up for our newsletter?<br />
                     You will then be given a chance to win a giftcard of $50!
                 </h1>

@@ -1,9 +1,11 @@
 ﻿@{
+    <!-- Titel + länk till layout -->
     Page.Title = "Roberts PCGuide - Contact";
     Layout = "~/Shared/_Layout1.cshtml";
 }
 
 @{
+    <!-- Variabler och validationer till formulär -->
     var placeholderName = "Your name";
     var placeholderEmail = "Your email";
     var placeholderSubject = "Subject";
@@ -36,6 +38,7 @@
 }
 
 @{
+    <!-- Ger felmeddelande ifall man glömt ngt -->
     if (IsPost && nameVar.IsEmpty() && emailVar.IsEmpty() && subjectVar.IsEmpty() && messageVar.IsEmpty())
     {
         Validation.AddFormError("Please fill in the form before continuing");
@@ -44,56 +47,65 @@
 
 <html lang="en">
 <head>
-
+    <!-- Theme Changer CSS -->
     <link rel="stylesheet" type="text/css" href="positive.css" />
-
-    <!--JS-->
-    <script src="~/ThemeChanger.js"></script>
-
 </head>
 <body>
     <div class="cont1">
         <h2 class="intro-text padding-top">Contact us</h2>
 
         @{<br />
+            <!-- Detta är alert divar som dyker upp
+            om man har missat något-->
             if (IsPost)
             {
                 if (nameVar.IsEmpty())
                 {
                     placeholderName = nameVar;
 
-                    <div class="alert alert-danger" role="alert">
-                        <p>Please fill in your name</p>
+                    <div class="col-6" style="margin: auto; text-align: center; font-family: Fontin">
+                        <div class="alert alert-danger" role="alert">
+                            <p>Please fill in your name</p>
+                        </div>
                     </div>
                 }
                 if (emailVar.IsEmpty())
                 {
                     placeholderEmail = emailVar;
 
-                    <div class="alert alert-danger" role="alert">
-                        <p>Please fill in your email</p>
+                    <div class="col-6" style="margin: auto; text-align: center; font-family: Fontin">
+                        <div class="alert alert-danger" role="alert">
+                            <p>Please fill in your email</p>
+                        </div>
                     </div>
                 }
                 if (subjectVar.IsEmpty())
                 {
                     placeholderSubject = subjectVar;
 
-                    <div class="alert alert-danger" role="alert">
-                        <p>Please fill in your subject</p>
+                    <div class="col-6" style="margin: auto; text-align: center; font-family: Fontin">
+                        <div class="alert alert-danger" role="alert">
+                            <p>Please fill in your subject</p>
+                        </div>
                     </div>
                 }
                 if (messageVar.IsEmpty())
                 {
                     placeholderMessage = messageVar;
 
-                    <div class="alert alert-danger" role="alert">
-                        <p>Please fill in your message</p>
+                    <div class="col-6" style="margin: auto; text-align: center; font-family: Fontin">
+                        <div class="alert alert-danger" role="alert">
+                            <p>Please fill in your message</p>
+                        </div>
                     </div>
                 }
                 else
                 {
-                    <div class="alert alert-primary" role="alert">
-                        Thank you! Your message has been sent and recived to us!
+                    <!-- Denna säger att allt har gott bra och meddelande har skickats -->
+                    <div class="col-6" style="margin: auto; text-align: center; font-family: Fontin">
+                        <div class="alert alert-primary dropShadow" style="background-color:#48B4E2 !important; border-color:#1E4B7B; color: #333333;" role="alert">
+                            Thank you! Your message has been sent and recived to us!
+                        </div><br />
                     </div>
                 }
             }
@@ -156,10 +168,9 @@
                                     <input type="submit" class="btn btn-primary" value="Submit" />
                                 </div>
                             </form>
-
-
                         </div>
 
+                        <!-- Snygga ikoner med information under de -->
                         <div class="col-md-3 text-center" style="font-family:Fontin">
                             <ul class="list-unstyled mb-0">
                                 <li class="div-white">
