@@ -24,6 +24,7 @@ footer {
 
 .intro-text {
     font-size: 44px;
+    font-weight: 400;
     margin: auto;
     padding: 10px;
     font-family: 'Roboto Slab';
@@ -57,8 +58,8 @@ footer {
     text-shadow: 0px 0px 15px #1E4B7B;
 }
 .card{
-    animation: slide 0.8s ease;
     font-family: Fontin;
+    height: 100% !important;
 }
 .card:hover {
     transform: translateY(-5px);
@@ -129,6 +130,9 @@ footer {
     -webkit-transition: ease 1s !important;
     -moz-transition: ease 1s !important;
     transition: ease 1s !important;
+}
+#hideShow{
+    display:none;
 }
 
 

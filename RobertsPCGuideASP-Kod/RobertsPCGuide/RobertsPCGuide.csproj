@@ -134,10 +134,10 @@
     <Content Include="Img\Delar\MOBO\MSI_B450_TOMAHAWK_MAX_ATX_AM4_Motherboard-removebg-preview.png" />
     <Content Include="Img\Delar\OS\Microsoft_Windows_10_Home_OEM_64-bit-removebg-preview.png" />
     <Content Include="Img\Delar\OS\Microsoft_Windows_10_Pro_OEM_64-bit-removebg-preview.png" />
-    <Content Include="Img\Delar\PSU\Corsair_RMx__2018__850_W_80+_Gold_Certified_Fully_Modular_ATX_Power_Supply-removebg-preview.png" />
-    <Content Include="Img\Delar\PSU\Corsair_RM__2019__750_W_80+_Gold_Certified_Fully_Modular_ATX_Power_Supply-removebg-preview.png" />
-    <Content Include="Img\Delar\PSU\EVGA_500_W_80+_Certified_ATX_Power_Supply-removebg-preview.png" />
-    <Content Include="Img\Delar\PSU\EVGA_BQ_600_W_80+_Bronze_Certified_Semi-modular_ATX_Power_Supply-removebg-preview.png" />
+    <Content Include="Img\Delar\PSU\Corsair_RMx__2018__850_W.png" />
+    <Content Include="Img\Delar\PSU\Corsair_RM__2019__750_W.png" />
+    <Content Include="Img\Delar\PSU\EVGA_500_W.png" />
+    <Content Include="Img\Delar\PSU\EVGA_BQ_600_W.png" />
     <Content Include="Img\Delar\RAM\Corsair_Vengeance_LPX_8_GB__2_x_4_GB__DDR4-3000_Memory-removebg-preview.png" />
     <Content Include="Img\Delar\RAM\Corsair_Vengeance_RGB_Pro_16_GB__2_x_8_GB__DDR4-3200_Memory-removebg-preview.png" />
     <Content Include="Img\Delar\RAM\Corsair_Vengeance_RGB_Pro_32_GB__2_x_16_GB__DDR4-3200_Memory-removebg-preview.png" />
@@ -163,6 +163,12 @@
     <Content Include="Img\Social\Instagramlogo.png" />
     <Content Include="Img\Social\redditlogo.png" />
     <Content Include="Img\Social\twitterlogo.png" />
+    <Content Include="cart.js" />
+    <Content Include="Minified\cart.min.js" />
+    <Content Include="Minified\dark.min.css" />
+    <Content Include="Minified\GeneralCSS.min.css" />
+    <Content Include="Minified\light.min.css" />
+    <Content Include="Minified\ThemeChanger.min.js" />
     <Content Include="ThemeChanger.js" />
     <Content Include="Web.config" />
   </ItemGroup>

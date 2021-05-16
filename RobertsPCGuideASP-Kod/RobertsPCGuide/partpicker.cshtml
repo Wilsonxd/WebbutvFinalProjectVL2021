@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="positive.css" />
 
     <script src="~/ThemeChanger.js"></script>
+    <script src="~/cart.js"></script>
+
 </head>
 <body>
     
@@ -15,51 +17,449 @@
     <div class="cont1">
         <h1 class="intro-text padding-top">Here you will be able to chose parts for your new pc</h1><br />
         <div class="container" style="min-height: 80vh;">
-            <h2 class="second-text">Start by choosing a chassi</h2><br />
 
-            <!-- CARDS -->
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card hover-shadow">
-                        <img class="card-img-top card-img" src="~/Img/Delar/GPU/ASRock_Radeon_VII_16_GB_Phantom_Gaming_X_Video_Card-removebg-preview.png" style="width: 100px;" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title card-h">Title</h4>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit.
-                            </p>
-                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&" class="btn btn-primary">Länk</a>
+            <!--Chassi-->
+            <div style="animation:dropTop 1s ease">
+                <h2 class="second-text">Start by choosing a chassi</h2><br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card hover-shadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/Case/Cooler_Master_MasterCase_H500_ATX_Mid_Tower_Case.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title card-h">Cooler Master H500</h4>
+                                <p class="card-text">
+                                    Large chassi with two large fans on the front and one on the back
+                                </p>
+                                <p class="card-text">
+                                    $109.35
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Cooler Master H500', 109.35); displayTable();">Add to cart</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-sm-4">
-                    <div class="card dropShadow">
-                        <img class="card-img-top card-img" src="~/Img/Delar/GPU/asus-geforce-rtx-3080-10gb-rog-strix-removebg-preview.png" style="width: 100px;" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit.
-                            </p>
-                            <a href="#" class="btn btn-primary">Länk</a>
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/Case/Corsair_iCUE_465X_RGB_ATX_Mid_Tower_Case.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Corsair iCUE</h4>
+                                <p class="card-text">
+                                    Large chassi with three fans on the front
+                                </p>
+                                <p class="card-text">
+                                    $134.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Corsair iCUE', 134.99); displayTable();">Add to cart</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-sm-4">
-                    <div class="card dropShadow">
-                        <img class="card-img-top card-img" src="~/Img/Delar/GPU/Asus_GeForce_RTX_2080_Ti_11_GB_ROG_Strix_Gaming_OC_Video_Card-removebg-preview.png" style="width: 100px;" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit.
-                            </p>
-                            <a href="#" class="btn btn-primary">Länk</a>
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/Case/Lian_Li_PC-O11_Dynamic_ATX_Full_Tower_Case.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Lian Li PC-011</h4>
+                                <p class="card-text">
+                                    Nice transparent chassis with great potential for nice computers
+                                </p>
+                                <p class="card-text">
+                                    $171.32
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Lian Li PC-011', 171.32); displayTable();">Add to cart</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div><br /><br />
+
+                <!--CPU-->
+                <h2 class="second-text">Processor / CPU</h2><br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card hover-shadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/CPU/AMD_Ryzen_5_3600_3.6_GHz_6-Core_Processor.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title card-h">AMD Ryzen 5</h4>
+                                <p class="card-text">
+                                    AMD's midrange processor, good cpu for the money
+                                </p>
+                                <p class="card-text">
+                                    $257.56
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('AMD Ryzen 5', 257.56); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/CPU/Intel_Core_i7-9700K_3.6_GHz_8-Core_Processor.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Intel Core i7</h4>
+                                <p class="card-text">
+                                    Intel high range processor, good for editing
+                                </p>
+                                <p class="card-text">
+                                    $289.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Intel Core i7', 289.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/CPU/Intel_Core_i9-9900K_3.6_GHz_8-Core_Processor.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Intel Core i9</h4>
+                                <p class="card-text">
+                                    Intel's best processor, awesome for games and editing etc.
+                                </p>
+                                <p class="card-text">
+                                    $379.97
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Intel Core i9', 379.97); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><br />
+
+                <!--CPU Cooler-->
+                <h2 class="second-text">CPU Cooler</h2><br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card hover-shadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/CPU Cooler/be_quiet__Dark_Rock_Pro_4_50.5_CFM_CPU_Cooler-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title card-h">be quiet Dark Rock Pro 4 50</h4>
+                                <p class="card-text">
+                                    Nice fan from be quiet, which is also very quiet
+                                </p>
+                                <p class="card-text">
+                                    $89.90
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('be quiet Dark Rock Pro 4 50', 89.90); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/CPU Cooler/Corsair_H100i_RGB_PLATINUM_75_CFM_Liquid_CPU_Cooler-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Corsair H100i RGB PLATINUM</h4>
+                                <p class="card-text">
+                                    Good water-cooled CPU fan, even with nice rgb
+                                </p>
+                                <p class="card-text">
+                                    $159.49
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Corsair H100i RGB PLATINUM', 159.49); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/CPU Cooler/Corsair_H150i_PRO_47.3_CFM_Liquid_CPU_Cooler-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Corsair H150i PRO</h4>
+                                <p class="card-text">
+                                    An awesome CPU fan powered on water cooling with tripple fans for efficient cooling
+                                </p>
+                                <p class="card-text">
+                                    $304.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Corsair H150i PRO', 304.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><br />
+
+                <!--GPU-->
+                <h2 class="second-text">Graphics Card</h2><br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card hover-shadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/GPU/Gigabyte_GeForce_GTX_1660_SUPER_6_GB_OC_Video_Card-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title card-h">GeForce GTX 1660 Super</h4>
+                                <p class="card-text">
+                                    Nvidia's cheapest and best graphics card for the money
+                                </p>
+                                <p class="card-text">
+                                    $285.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('GeForce GTX 1660 Super', 285.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/GPU/asus-geforce-rtx-3080-10gb-rog-strix-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">GeForce RTX 3080</h4>
+                                <p class="card-text">
+                                    A perfect graphics card that crushes all AAA games with relief
+                                </p>
+                                <p class="card-text">
+                                    $759.94
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('GeForce RTX 3080', 759.94); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/GPU/RTX_3090-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">GeForce RTX 3090</h4>
+                                <p class="card-text">
+                                    Nvidia's best graphics card, which tremendously crushes all competitors
+                                </p>
+                                <p class="card-text">
+                                    $1609.94
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('GeForce RTX 3090', 1609.94); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><br />
+
+                <!--MOBO-->
+                <h2 class="second-text">Motherboard</h2><br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card hover-shadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/MOBO/Asus_PRIME_Z390-A_ATX_LGA1151_Motherboard-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title card-h">Asus PRIME Z390</h4>
+                                <p class="card-text">
+                                    Perfect motherboard from ASUS for Intel socket processors
+                                </p>
+                                <p class="card-text">
+                                    $177.69
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Asus PRIME Z390', 177.69); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/MOBO/Asus_ROG_STRIX_B450-F_GAMING_ATX_AM4_Motherboard-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Asus ROG STRIX B450-F</h4>
+                                <p class="card-text">
+                                    Nice motherboard from ASUS for Intel socket processors
+                                </p>
+                                <p class="card-text">
+                                    $120.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Asus ROG STRIX B450-F', 120.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/MOBO/MSI_B450_TOMAHAWK_MAX_ATX_AM4_Motherboard-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">MSI B450 TOMAHAWK MAX</h4>
+                                <p class="card-text">
+                                    Nice motherboard for AMD socket processors
+                                </p>
+                                <p class="card-text">
+                                    $114.00
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('MSI B450 TOMAHAWK MAX', 114.00); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><br />
+
+                <!--PSU-->
+                <h2 class="second-text">Power Supply</h2><br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/PSU/EVGA_BQ_600_W.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">EVGA BQ 600W</h4>
+                                <p class="card-text">
+                                    Reliable 600W power supply from EVGA
+                                </p>
+                                <p class="card-text">
+                                    $73.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('EVGA BQ 600W', 73.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card hover-shadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/PSU/Corsair_RM__2019__750_W.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title card-h">Corsair RM 750W Gold</h4>
+                                <p class="card-text">
+                                    750W power supply that can handle everything from Corsair
+                                </p>
+                                <p class="card-text">
+                                    $124.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Corsair RM 750W Gold', 124.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/PSU/Corsair_RMx__2018__850_W.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Corsair RMx 850W Gold</h4>
+                                <p class="card-text">
+                                    850W power supply from Corsair, you will never need more watts
+                                </p>
+                                <p class="card-text">
+                                    $144.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Corsair RMx 850W Gold', 144.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><br />
+
+                <!--RAM-->
+                <h2 class="second-text">RAM</h2><br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card hover-shadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/RAM/Corsair_Vengeance_LPX_8_GB__2_x_4_GB__DDR4-3000_Memory-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title card-h">Corsair Vengeance 8GB</h4>
+                                <p class="card-text">
+                                    2x4 - 8GB DDR4-3000Mhz RAM from Corsair
+                                </p>
+                                <p class="card-text">
+                                    $68.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Corsair Vengeance 8GB', 68.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/RAM/G.Skill_Ripjaws_V_32_GB__2_x_16_GB__DDR4-3600_Memory-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">G.Skill Ripjaws 32GB</h4>
+                                <p class="card-text">
+                                    2x16 - 32GB DDR4-3600Mhz RAM from G.Skill
+                                </p>
+                                <p class="card-text">
+                                    $116.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('G.Skill Ripjaws 32GB', 116.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/RAM/Corsair_Vengeance_RGB_Pro_32_GB__4_x_8_GB__DDR4-3600_Memory-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Corsair Vengeance RGB Pro 32GB</h4>
+                                <p class="card-text">
+                                    4x8 - 32GB DDR4-3600Mhz RAM from Corsair
+                                </p>
+                                <p class="card-text">
+                                    $150.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Corsair Vengeance RGB Pro 32GB', 150.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><br />
+
+                <!--STORAGE-->
+                <h2 class="second-text">Storage</h2><br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card hover-shadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/Storage/Samsung_860_Evo_500_GB_2.5_Solid_State_Drive-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title card-h">Samsung 860 Evo 500GB SSD</h4>
+                                <p class="card-text">
+                                    Good SSD of 500GB from Samsung, perfect second hard drive for your computer
+                                </p>
+                                <p class="card-text">
+                                    $53.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Samsung 860 Evo 500GB SSD', 53.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/Storage/Seagate_Barracuda_Compute_2_TB_3.5_7200RPM_Internal_Hard_Drive-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Seagate BarraCuda 2TB Hard Drive</h4>
+                                <p class="card-text">
+                                    A mechanical hard drive with a large space of 2TB, 7200RPM
+                                </p>
+                                <p class="card-text">
+                                    $54.99
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Seagate BarraCuda 2TB Hard Drive', 54.99); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card dropShadow">
+                            <img class="card-img-top card-img" src="~/Img/Delar/Storage/Samsung_970_Evo_1_TB_M.2-2280_NVME_Solid_State_Drive-removebg-preview.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Samsung 970 EVO 1TB M.2-NVME SSD</h4>
+                                <p class="card-text">
+                                    1TB M.2-NVME SSD from Samsung with insanely fast speeds, perfect for your gaming computer
+                                </p>
+                                <p class="card-text">
+                                    $148.66
+                                </p>
+                                <a class="btn btn-primary" onclick="add2Cart('Samsung 970 EVO 1TB M.2-NVME SSD', 148.66); displayTable();">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br /><br />
             </div>
 
-            </div>
+            <div id="hideShow" style="font-family:Fontin; color: #e5e5e5;">
+                <div class="jumbotron dropShadow" style="background-color: #262626; background:none">
+                <table id="TableCart">
+                <thead>
+                <p style="color: #e5e5e5;">Here is your basket? Are you missing something? Otherwise continue to check out!</p>
+                </thead>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr> 
+                </table>
+                <div id="purchaseInfo" style="color: #e5e5e5;">TOTAL: $</div><br />
+                <button class="btn btn-primary" onclick="Rensa()">
+                    Clear
+                </button>
+                    <button class="btn btn-primary" onclick="checkOut()">
+                    Check Out
+                </button>
+                </div>
+            </div><br />
+
         </div>
+    </div>
 </body>
 </html>

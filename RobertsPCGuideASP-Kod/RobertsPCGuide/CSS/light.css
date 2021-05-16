@@ -1,42 +1,28 @@
 ﻿.cont1 {
     background-color: #e5e5e5;
 }
-
 .cont2 {
-    background-color: #e5e5e5;
-    color: #333333;
+    background-color: #262626;
+    color: #e5e5e5;
 }
-
 body {
     background-color: #e5e5e5;
 }
-
 nav {
     background-color: #262626;
 }
-
 footer {
     background-color: #262626;
 }
-
 .intro-text {
     color: #e5e5e5;
 }
-
-.btn-outline-success {
-    background-color: #48b4e2;
-    border-color: #e5e5e5;
-}
-
-.fas {
-    color: #e5e5e5;
-}
-
 .nav-link {
     color: #38b4e2;
 }
-
-
+i{
+    color: #333333;
+}
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
