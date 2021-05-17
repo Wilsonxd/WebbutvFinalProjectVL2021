@@ -1,26 +1,4 @@
-﻿@*@{ 
-    using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconn"].ConnectionString))
-    {
-        con.Open();
-        var queryString = "SELECT * FROM PRODUCTS";
-        SqlCommand cmd = new SqlCommand(queryString, con);
-        using (SqlDataReader reader = cmd.ExecuteReader())
-        {
-            if (reader.HasRows)
-            {
-                // Read advances to the next row.
-                while (reader.Read())
-                {
-                    var valeu1 = reader[0];
-                    var value2 = reader[1];
-                }
-
-            }
-        }
-    }
-}*@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>@Page.Title</title>
@@ -31,11 +9,11 @@
     @RenderSection("head", required: false)
 
     <!--CSS-->
-    <link href="~/CSS/GeneralCSS.css" rel="stylesheet" />
-    <link href="~/CSS/dark.css" rel="stylesheet" />
+    <link href="~/Minified/GeneralCSS.min.css" rel="stylesheet" />
+    <link href="~/Minified/dark.min.css" rel="stylesheet" />
 
     <!--Javascript till theme changer-->
-    <script src="~/ThemeChanger.js"></script>
+    <script src="~/Minified/ThemeChanger.min.js"></script>
 
     <!-- Font Awesome Images link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -48,57 +26,59 @@
 <body>
 
     <!-- Navmenu -->
-        <nav class="navbar navbar-expand-lg topnav">
-            <!--Bild med länk till index.cshtml-->
-            <a class="navbar-brand" href="~/index.cshtml"><img class="scaleHover" src="~/Img/1-removebg.png" alt="Roberts PCGuide" style="width: 100px;"></a>
-            <!--Meny toggler som visas när skärmen är mindre-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
+    <nav class="navbar navbar-expand-lg topnav">
+        <!--Bild med länk till index.cshtml-->
+        <a class="navbar-brand" href="~/index.cshtml"><img class="scaleHover" src="~/Img/1-removebg.png" alt="Roberts PCGuide" style="width: 100px;"></a>
+        <!--Meny toggler som visas när skärmen är mindre-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
 
-            <!--Länkar-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="~/partpicker.cshtml">PC Partpicker</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="~/about.cshtml">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="~/contact.cshtml">Contact</a>
-                    </li>
-                </ul>
+        <!--Länkar-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/partpicker.cshtml">PC Partpicker</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/about.cshtml">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/contact.cshtml">Contact</a>
+                </li>
+            </ul>
 
-                <!-- Themes Changer -->
-                <div class="dropdown dropShadow" style="margin-right: 50px">
-                    <button class="btn btn-secondary dropdown-toggle"
-                            type="button" id="dropdownMenu1" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        Themes
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <a class="dropdown-item" href="#" onclick="changeCSS('/CSS/light.css', 1);">Light Theme</a>
-                        <a class="dropdown-item" href="#" onclick="changeCSS('/CSS/dark.css', 1);">Dark Theme</a>
-                    </div>
+            <!-- Themes Changer -->
+            <div class="dropdown dropShadow" style="margin-right: 50px">
+                <button class="btn btn-secondary dropdown-toggle"
+                        type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    Themes
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <a class="dropdown-item" href="#" onclick="changeCSS('/CSS/light.css', 1);">Light Theme</a>
+                    <a class="dropdown-item" href="#" onclick="changeCSS('/CSS/dark.css', 1);">Dark Theme</a>
                 </div>
-
             </div>
-        </nav>
+
+        </div>
+    </nav>
 
     <main>
         <!--Rendra varje sida med respektive body-->
         @RenderBody()
     </main>
 
-    
+
     <div class="cont2">
         <!-- Footer med länkar -->
         <div class="col-12">
             <footer class="container">
                 <p class="float-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2019-2021 Roberts PCGuide &middot; <a href="~/about.cshtml">About</a> &middot; <a href="~/contact.cshtml">Contact</a> 
-                &middot; Telefon: 123-1234567 &middot; E-post: RobertsPCGuide@gmail.com</p><br>
+                <p>
+                    &copy; 2019-2021 Roberts PCGuide &middot; <a href="~/about.cshtml">About</a> &middot; <a href="~/contact.cshtml">Contact</a>
+                    &middot; Telefon: 123-1234567 &middot; E-post: RobertsPCGuide@gmail.com
+                </p><br>
             </footer>
         </div>
     </div>
