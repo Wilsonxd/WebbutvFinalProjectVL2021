@@ -2,35 +2,8 @@
 @using System.Data.SqlClient;
 @using WebMatrix.WebData;
 
-@*@{
-    using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["PartpickerDB"].ConnectionString))
-    {
-        con.Open();
-        var queryString = "SELECT * FROM PRODUCTS";
-        SqlCommand cmd = new SqlCommand(queryString, con);
-        using (SqlDataReader reader = cmd.ExecuteReader())
-        {
-            if (reader.HasRows)
-            {
-                // Read advances to the next row.
-                while (reader.Read())
-                {
-                    if (reader != null)
-                    {
-                        if (reader.GetValue(0) != null)
-                        {
-                            @reader.GetValue(2)
-                        }
-                        var value2 = reader[1];
-                    }
-                }
-
-            }
-        }
-    }
-}*@
-
 @{ 
+    <!--Databas koppling-->
     var db = Database.Open("PartpickerDB");
     var queryString = "SELECT * FROM CHASSI order by id asc";
     var result = db.Query(queryString); 
@@ -63,14 +36,13 @@
                         <div class="card dropShadow">
                             <img class="card-img-top card-img" src="~/Img/Delar/Case/Cooler_Master_MasterCase_H500_ATX_Mid_Tower_Case.png" alt="Cooler Master H500">
                             <div class="card-body">
-                                <h4 class="card-title card-h">
-                                   
+                                <h4 class="card-title card-h">                             
                                        @{
+                                           <!--Skriver ut namnet på produkten-->
                                            foreach (var Parts in result) { 
                                                @Parts.Name
                                            }
                                        }
-
                                 </h4>
                                 <p class="card-text">
                                     Large chassi with two large fans on the front and one on the back
