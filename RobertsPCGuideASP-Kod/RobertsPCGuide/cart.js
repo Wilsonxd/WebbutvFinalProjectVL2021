@@ -1,6 +1,6 @@
 ﻿var total = 0;
 function add2Cart(namn, pris) {
-    /*Skapar varukorgen*/
+    /*Creates the shopping cart*/
     var tabell = document.getElementById("TableCart");
     var rad = tabell.insertRow();
     var cell1 = rad.insertCell();
@@ -11,12 +11,12 @@ function add2Cart(namn, pris) {
     document.getElementById("purchaseInfo").innerHTML = "Total: " + "$" + total;
 }
 
-/*Visar tabellen när man lägger något i varukorgen*/
+/*Displays the table when you add something to the shopping cart*/
 function displayTable() {
     document.getElementById('hideShow').style.display = "block";
 }
 
-/*Rensar varukorgen*/
+/*Cleans the shopping cart*/
 function Rensa() {
     if (confirm("Are you sure you want to clear your cart?")) {
         total = 0;
@@ -29,7 +29,7 @@ function Rensa() {
     } else { }
 }
 
-/*Ger alert meddelande när man är klar*/
+/*Gives alert message when done*/
 function checkOut() {
     alert("Your order has been sent! Thank you!")
 }

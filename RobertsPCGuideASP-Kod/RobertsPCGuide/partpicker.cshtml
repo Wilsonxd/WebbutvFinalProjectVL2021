@@ -10,7 +10,7 @@
 }
 
 @{
-    <!-- Titel + länk till layout -->
+    <!-- Title + länk till layout -->
     Page.Title = "Roberts PCGuide - PC Partpicker";
     Layout = "~/Shared/_Layout1.cshtml";
 }
@@ -19,11 +19,11 @@
     <!-- Theme Changer CSS -->
     <link rel="stylesheet" type="text/css" href="positive.css" />
 
-    <!-- Länk till varukorg javascriptet -->
+    <!-- Link to cart javascript -->
     <script src="~/Minified/cart.min.js"></script>
 </head>
 <body>
-    <!-- Många divar som kommer här. Många bilder och mycket info. -->
+    <!-- Many div elements here. Many pictures and a lot of information. -->
     <div class="cont1">
         <h1 class="intro-text padding-top">Here you will be able to chose parts for your new pc</h1><br />
         <div class="container" style="min-height: 80vh;">
@@ -38,17 +38,29 @@
                             <div class="card-body">
                                 <h4 class="card-title card-h">                             
                                        @{
-                                           <!--Skriver ut namnet på produkten-->
+                                           <!--Prints out the name of the Chassi from the database-->
                                            foreach (var Parts in result) { 
                                                @Parts.Name
                                            }
                                        }
                                 </h4>
                                 <p class="card-text">
-                                    Large chassi with two large fans on the front and one on the back
+                                    @{
+                                        <!--Prints out the description of the Chassi from the database-->
+                                        foreach (var Parts in result)
+                                        {
+                                            @Parts.Desc
+                                        }
+                                    }
                                 </p>
                                 <p class="card-text">
-                                    $109.35
+                                    @{
+                                        <!--Prints out the price of the Chassi from the database-->
+                                        foreach (var Parts in result)
+                                        {
+                                            @Parts.Price
+                                        }
+                                    }
                                 </p>
                                 <a class="btn btn-primary" onclick="add2Cart('Cooler Master H500', 109.35); displayTable();">Add to cart</a>
                             </div>
@@ -453,8 +465,8 @@
                 </div><br /><br />
             </div>
 
-            <!-- Varukorgen. Är gömd från början men dyker fram när man har
-                lagt till något i varukorgen. Bygger på js.-->
+            <!-- The shopping cart is hidden from the beginning but appears when you have
+                 added something to the cart. Doable with js.-->
             <div id="hideShow" style="font-family:Fontin; color: #e5e5e5; background-color: #262626 !important;">
                 <div class="jumbotron dropShadow" style="background-color: #262626; background:none">
                     <table id="TableCart">
@@ -469,8 +481,8 @@
                         </tr>
                     </table>
                     <div id="purchaseInfo" style="color: #e5e5e5;">TOTAL: $</div><br />
-                    <!-- Två knappar. Clear ränsar varukorgen
-                        och Check out ger ett alert meddelande att order har lagts.-->
+                    <!-- Two buttons. Clear cleans the cart
+                        and Check out gives a alert message that the order has been submitet.-->
                     <button class="btn btn-primary" onclick="Rensa()">
                         Clear
                     </button>

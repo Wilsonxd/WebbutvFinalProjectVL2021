@@ -1,6 +1,6 @@
-﻿/*En funktion som byter hemsidan mellan två
- olika css filer. I detta fallet mellan Light.css 
- och dark.css*/
+﻿/*A function that switches the website between 
+ * two different css files. 
+ * In this case between Light.css and dark.css*/
 function changeCSS(cssFile, cssLinkIndex) {
     var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
     oldlink.href = cssFile;
